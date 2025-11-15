@@ -2,12 +2,11 @@
 
 ## Project Overview
 - This repo manages multiple Typst-based CVs that are each self-contained profiles (no shared template file in this repo).
-- Each `.typ` file corresponds to a specific language and focus area (tech, leadership, health/psychology, tailored employer variants).
+- Each profile `.typ` file corresponds to a specific language and focus area (tech, leadership, health/psychology, tailored employer variants).
 - PDFs are written to `build/` with one output per profile.
 
 ## Files & Profiles
 - Core English profiles:
-  - `main.typ` – general-purpose CV.
   - `en-tech.typ` – tech-focused CV.
   - `en-leadership-tech.typ` – tech + leadership-focused CV.
 - Core Swedish profiles:
@@ -18,6 +17,9 @@
 - Tailored profiles:
   - `anpassade-cvn/sv-trafikverket-tictec.typ` – Swedish, tailored to Trafikverket TicTec.
 
+- Reference template (non-profile):
+  - `templates/template-reference.typ` – English reference CV template; used as a starting point, but not treated as an active profile.
+
 All profiles:
 - Import `@preview/basic-resume:0.2.9`.
 - Define the same contact variables: `name`, `location`, `email`, `github`, `linkedin`, `phone`, `personal-site`.
@@ -26,8 +28,8 @@ All profiles:
 ## Conventions
 - Keep contact information and factual data (dates, titles, institutions, URLs) consistent across all profiles unless intentionally diverging.
 - Language is profile-specific:
-  - English files (`en-*`, `main.typ`) use English headings and bullets.
-  - Swedish files (`sv-*`, `anpassade-cvn/*.typ`) use Swedish headings and bullets.
+  - English profile files (`en-*`) use English headings and bullets.
+  - Swedish profile files (`sv-*`, `anpassade-cvn/*.typ`) use Swedish headings and bullets.
 - Do not change macro signatures:
   - Preserve named arguments for `#work`, `#edu`, `#project`, `#extracurriculars`.
   - Keep bullets (`- ...`) immediately following the relevant macro call.
