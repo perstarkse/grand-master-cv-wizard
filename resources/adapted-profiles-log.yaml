@@ -1,0 +1,40 @@
+# Adapted Profiles Log
+#
+# Documents tailored CVs, their target roles, and emphasised themes.
+
+adapted_profiles:
+  - id: sv-trafikverket-tictec
+    path: "anpassade-cvn/sv-trafikverket-tictec.typ"
+    based_on_profile: "sv-tech"
+    language: "sv"
+    target_role: "Systemutvecklare / plattform / infra som kod (Trafikverket TicTec)"
+    job_ad_source: "Trafikverket / TicTec platform role (details not stored here)"
+    themes_emphasised:
+      - platform-engineering
+      - infra
+      - automation
+      - developer-experience
+      - enablement
+      - data-and-ai
+    notes: >
+      Tailoring focuses on platform/infra, developer experience, automation and enabling other teams, with AI work and clinical background as supporting context.
+
+  - id: sv-sis-fou-mikrodata
+    path: "anpassade-cvn/sv-sis-fou-mikrodata.typ"
+    based_on_profile: "sv-health-psych"
+    language: "sv"
+    target_role: "Utredare, sektionen för forskning och utvärdering (SiS) – datahantering och mikrodata"
+    job_ad_source: "SiS FoU utredare med inriktning mot datahantering och mikrodata (Solna Business Park)"
+    themes_emphasised:
+      - data-analysis
+      - microdata-like-material
+      - quantitative-methods
+      - psychometrics
+      - confidentiality-and-gdpr
+      - clinical-context
+      - governance
+      - collaboration
+    notes: >
+      Tailoring shifts focus toward data handling, analysis planning, statistical work, and secure handling of sensitive data in a public-sector/clinical context,
+      while keeping clinical experience and governance/community roles as important context.
+

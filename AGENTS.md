@@ -112,6 +112,53 @@ These are the main operations an agent should support; treat them as a contract.
 - Update `name`, `location`, `email`, `github`, `linkedin`, `phone`, or `personal-site` across all `.typ` files.
 - Always apply changes consistently across profiles unless a specific profile should intentionally diverge (and document that in code or prompts).
 
+## Checklist: Creating a New Tailored CV from a Job Ad
+
+When asked to create a new tailored CV for a specific advert, follow this workflow:
+
+1. **Understand the advert and intent**
+   - Read the full ad carefully; note language, domain (tech, health, data/mikrodata, governance), seniority, and constraints (e.g. GDPR, sekretess, public-sector context).
+   - Extract key requirements/keywords (e.g. `mikrodata`, `registerdata`, `GDPR`, `R/Python`, `samverkan`, `myndighetserfarenhet`).
+
+2. **Select base profile and themes**
+   - Use `resources/profiles-index.yaml` to pick the closest existing profile by `language`, `focus`, and `primary_themes`.
+   - Use `resources/experience/roles.yaml`, `resources/experience/projects.yaml`, and `resources/experience/education.yaml` plus `resources/style-guide.md` to identify which roles/projects/education items and themes are most relevant to the ad.
+
+3. **Gather grounded facts and examples**
+   - Cross-check details in:
+     - `resources/blog-posts.md` (for concrete project/research details and analysis workflows).
+     - `resources/github-*.md` (for Minne/Infra or other repos).
+     - `resources/clinical-roles.md` (for clinical context).
+     - `resources/public-speaking-and-media.md` (for communication aspects).
+     - `resources/metrics-and-examples.md` (for safe metrics).
+     - `resources/strengths-from-recommendations.md` (for how others describe strengths).
+   - Do not invent new facts or metrics; stay within these sources and existing CVs.
+
+4. **Create the tailored Typst profile**
+   - Name the file according to language and role under `anpassade-cvn/` (e.g. `anpassade-cvn/sv-<org-or-role>.typ`).
+   - Copy the chosen base profile `.typ` file as a starting point, preserving macro structure and section order unless there is a strong reason to change.
+
+5. **Tailor sections to the advert**
+   - Rewrite `Summary` / `Sammanfattning` to clearly match the target role, using verbs and patterns from `resources/style-guide.md`.
+   - Adjust `Skills` / `Färdigheter` / `Core Competencies` to emphasise themes needed for the ad (e.g. mikrodata, registeranalys, GDPR, infra, AI).
+   - Update bullets under the most relevant `#work`, `#project` and `#edu` entries:
+     - Keep facts (dates, titles, institutions, URLs) consistent with structured resources and existing profiles.
+     - Use domain-appropriate language (Swedish vs English; clinical vs tech vs governance).
+   - Optionally reflect soft strengths aligned with recommendation themes (problem-solving, collaboration, communication, reliability) without quoting letters directly.
+
+6. **Update indexes and logs**
+   - Add an entry for the new profile in `resources/profiles-index.yaml` with `id`, `path`, `language`, `focus`, `primary_themes`, `source_roles`, `source_projects`, `source_education`, and `notes`.
+   - Add an entry in `resources/adapted-profiles-log.yaml` with:
+     - `id`, `path`, `based_on_profile`, `language`
+     - `target_role`, `job_ad_source`
+     - `themes_emphasised`
+     - short `notes` on how it was tailored.
+
+7. **Quality and consistency checks**
+   - Ensure Typst macros still parse (no missing commas, quotes, or parentheses).
+   - Verify factual consistency against structured resources (roles/projects/education), blog posts, GitHub snapshots and metrics files.
+   - If possible, run `typst compile` for the new profile to catch parsing issues.
+
 ## Writing & Editing Style
 - Maintain a concise, impact-focused tone; emphasize scope, ownership, and measurable outcomes where available.
 - Use vocabulary appropriate to the profile focus:
@@ -140,6 +187,8 @@ These are the main operations an agent should support; treat them as a contract.
   - `resources/public-speaking-and-media.md` – record of talks, sessions and media-related communication.
   - `resources/metrics-and-examples.md` – concrete metrics and examples safe to reuse across profiles.
   - `resources/recommendations/*.md` – recommendation letters (e.g. `jacob-welsh-ceo-tiqqe.md`, `tal-cohen-munters.md`); use to understand how others describe collaboration, quality and impact, but do not quote directly without adaptation.
+  - `resources/strengths-from-recommendations.md` – distilled strengths and themes derived from recommendation letters (problem-solving, collaboration, communication, etc.).
+  - `resources/adapted-profiles-log.yaml` – log of tailored CVs (id, path, base profile, target role, emphasised themes, notes).
 
 ## Quality & Safety Checks
 - Before major edits:
