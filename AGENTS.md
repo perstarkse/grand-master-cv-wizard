@@ -16,9 +16,13 @@
   - `sv-leadership-tech.typ` – tech + leadership-focused CV.
 - Tailored profiles:
   - `anpassade-cvn/sv-trafikverket-tictec.typ` – Swedish, tailored to Trafikverket TicTec.
+  - `anpassade-cvn/sv-sis-fou-mikrodata.typ` – Swedish, tailored to SiS FoU/data/mikrodata roles.
 
 - Reference template (non-profile):
   - `templates/template-reference.typ` – English reference CV template; used as a starting point, but not treated as an active profile.
+
+- Profiles index:
+  - `resources/profiles-index.yaml` – canonical list of profiles (id, path, language, focus, source roles/projects/education, and notes). Use this for `list_profiles` and `select_profile`, and keep it in sync whenever you add, rename, move, or remove a profile `.typ` file.
 
 All profiles:
 - Import `@preview/basic-resume:0.2.9`.
@@ -94,6 +98,7 @@ These are the main operations an agent should support; treat them as a contract.
   - `Skills` / `Färdigheter` / `Core Competencies`.
   - Bullet points under the most relevant `#work` and `#project` entries.
 - Name the file to reflect language and role (e.g., `anpassade-cvn/sv-<org-or-role>.typ`).
+- After creating a tailored profile, add or update the corresponding entry in `resources/profiles-index.yaml` so that future calls to `list_profiles` / `select_profile` can find it.
 
 ### 7. `build_profile(profile_id)` and `build_all`
 - Compile Typst sources to PDFs in `build/` using `typst compile`:
@@ -122,6 +127,19 @@ These are the main operations an agent should support; treat them as a contract.
   - When referencing blog-based arbete i CV:n (projekt, publikationer, färdigheter), prefer facts and wording grounded in this file instead of inventing new claims.
 - Additional resources may be added over time (for example, offline snapshots of key GitHub-repon under `resources/`).
   - If such GitHub snapshots exist, treat them as the primary source for repo names, teknisk stack och ansvarsbeskrivningar i projektavsnitt.
+ - Current GitHub snapshots:
+   - `resources/github-index.md` lists available repo snapshots such as `resources/github-minne.md` (Minne) and `resources/github-infra.md` (Infra).
+- Structured experience:
+  - `resources/experience/roles.yaml` – language-neutral descriptions of real roles (employer, dates, responsibilities, themes, evidence).
+  - `resources/experience/education.yaml` – education history and thesis details.
+  - `resources/experience/projects.yaml` – projects and research work (including Minne, Infra, LLM-studier).
+- Style and phrasing:
+  - `resources/style-guide.md` – preferred tone, verb choices and patterns for Swedish and English CVs.
+- Other contextual snapshots:
+  - `resources/clinical-roles.md` – anonymised, high-level descriptions of clinical roles and settings.
+  - `resources/public-speaking-and-media.md` – record of talks, sessions and media-related communication.
+  - `resources/metrics-and-examples.md` – concrete metrics and examples safe to reuse across profiles.
+  - `resources/recommendations/*.md` – recommendation letters (e.g. `jacob-welsh-ceo-tiqqe.md`, `tal-cohen-munters.md`); use to understand how others describe collaboration, quality and impact, but do not quote directly without adaptation.
 
 ## Quality & Safety Checks
 - Before major edits:
@@ -131,3 +149,4 @@ These are the main operations an agent should support; treat them as a contract.
   - Ensure all Typst macros still parse (no missing commas, quotes, or parentheses).
   - If possible, compile the changed profile(s) with `typst compile` to check for errors before sharing PDFs.
 - Do not remove or rename files without explicit instruction.
+- When profile files are added, moved, renamed, or intentionally deprecated, update `resources/profiles-index.yaml` to reflect the new state so that profile selection remains accurate.

@@ -1,0 +1,71 @@
+# Structured representation of projects and publications.
+
+projects:
+  - id: project-minne
+    name: "Minne"
+    role: "Creator and lead developer"
+    start: "2024-09"
+    end: null
+    domain: "software"
+    themes:
+      - personal-knowledge-management
+      - graph-databases
+      - hybrid-retrieval
+      - ai-integration
+      - devops
+      - release engineering
+    summary: >
+      Minne is a self-hosted, graph-powered personal knowledge base and save-for-later application built in Rust with Axum and HTMX,
+      using SurrealDB for graph, document and vector search, and integrating OpenAI-compatible APIs for entity/relationship extraction and chat.
+    evidence:
+      - source: "resources/github-minne.md"
+        section: "Summary"
+      - source: "en-tech.typ"
+        section: "Projects"
+
+  - id: project-infra
+    name: "Infra"
+    role: "Creator and maintainer"
+    start: "2023-01"
+    end: null
+    domain: "infrastructure"
+    themes:
+      - nixos
+      - homelab
+      - backups
+      - networking
+      - secrets-management
+    summary: >
+      Declarative homelab and infrastructure repository using Nix flakes and Clan to manage router, server and workstation configurations,
+      with modular support for routing, VPN, DNS, secrets, backups and monitoring.
+    evidence:
+      - source: "resources/github-infra.md"
+        section: "Summary"
+      - source: "en-tech.typ"
+        section: "Projects"
+
+  - id: project-llm-psych-measures
+    name: "LLMs for psychological measures in student chat data"
+    role: "Thesis project lead and researcher/author"
+    start: "2023-01"
+    end: "2024-12"
+    domain: "research"
+    themes:
+      - llm
+      - psychometrics
+      - text-analysis
+      - stress-measures
+      - wellbeing
+      - quantitative-methods
+      - longitudinal-analysis
+    summary: >
+      Thesis and subsequent research work using large language models to extract stress-related psychological measures from student chat data,
+      including a longitudinal design with model validation and a study operationalising the demand–control–support model on aggregated chat data
+      for statistical analysis, convergent validity and practical use in monitoring wellbeing.
+    evidence:
+      - source: "sv-health-psych.typ"
+        section: "Utbildning"
+      - source: "sv-sis-fou-mikrodata.typ"
+        section: "Projekt & publikationer"
+      - source: "resources/blog-posts.md"
+        section: "LLM research post"

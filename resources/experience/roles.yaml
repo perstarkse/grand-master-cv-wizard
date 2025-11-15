@@ -1,0 +1,149 @@
+# Structured, language-neutral representation of real roles.
+# Text is primarily in English to keep it neutral and reusable across CV languages.
+
+roles:
+  - id: region-orebro-psych-2018-2023
+    employer: "Region Örebro Län"
+    title: "Certified Psychologist"
+    location: "Örebro, SE"
+    start: "2018-08"
+    end: "2023-04"
+    domain: "clinical"
+    setting: "primary healthcare"
+    themes:
+      - clinical-assessment
+      - treatment
+      - workflow-improvement
+      - coordination
+      - stakeholder-collaboration
+      - media-and-communication
+      - data-and-followup
+    summary: >
+      Psychological assessment and evidence-based treatment, with responsibility for workflows and coordination in an interprofessional setting.
+    responsibilities:
+      - "Conduct psychological assessments and evidence-based treatment in line with guidelines."
+      - "Design and refine workflows for patient management and care coordination."
+      - "Act as psychological subject-matter expert in an interprofessional assessment team."
+      - "Maintain structured documentation and systematic follow-up of interventions."
+      - "Provide external communication and recurring media briefings on psychological topics."
+    evidence:
+      - source: "sv-health-psych.typ"
+        section: "Arbetslivserfarenhet"
+      - source: "en-tech.typ"
+        section: "Work Experience"
+
+  - id: region-orebro-psych-2024-
+    employer: "Region Örebro Län"
+    title: "Certified Psychologist"
+    location: "Hallsberg, SE"
+    start: "2024-05"
+    end: null
+    domain: "clinical"
+    setting: "specialist healthcare"
+    themes:
+      - clinical-assessment
+      - treatment
+      - consultation
+      - follow-up
+      - health-and-safety
+      - mentoring
+      - methodology-support
+      - confidentiality-and-gdpr
+    summary: >
+      Clinical psychologist in a complex care environment with high confidentiality requirements, combining assessment/treatment with consultation,
+      follow-up and health-and-safety responsibilities.
+    responsibilities:
+      - "Perform psychological assessments and treatment, including structured follow-up of interventions."
+      - "Provide consultation and methodological support to team members and collaborating services."
+      - "Apply evidence-based frameworks to complex, multi-stakeholder clinical problems."
+      - "Serve as elected Health and Safety Representative, driving workplace initiatives with leadership and staff."
+      - "Mentor junior colleagues and support systematic prioritisation and follow-up."
+    evidence:
+      - source: "sv-sis-fou-mikrodata.typ"
+        section: "Arbetslivserfarenhet"
+      - source: "sv-health-lead.typ"
+        section: "Ledarskapserfarenhet"
+      - source: "en-leadership-tech.typ"
+        section: "Leadership Experience"
+
+  - id: tiqqe-fullstack-2023-2024
+    employer: "TIQQE AB"
+    title: "Full-Stack Developer (client-facing lead)"
+    location: "Örebro, SE"
+    start: "2023-04"
+    end: "2024-03"
+    domain: "tech"
+    setting: "consultancy"
+    themes:
+      - fullstack-development
+      - ai-translation
+      - llm-integration
+      - stakeholder-management
+      - roadmap-ownership
+      - technical-leadership
+      - internal-training
+    summary: >
+      Full-stack developer and client-facing lead responsible for AI-powered translation features, roadmap dialogue, and AI adoption work.
+    responsibilities:
+      - "Architect and implement AI-powered translation for an LMS using AWS Translate and LLMs."
+      - "Scale the platform from 2 to 8+ languages, reducing manual localisation work."
+      - "Act as technical and client-facing lead in roadmap discussions, requirements gathering and demos."
+      - "Promote AI adoption via internal talks on LLMs/RAG and external strategy sessions with clients."
+      - "Contribute to quality practices around code review, testing and release processes."
+    evidence:
+      - source: "en-tech.typ"
+        section: "Work Experience"
+      - source: "sv-tech.typ"
+        section: "Arbetslivserfarenhet"
+      - source: "en-leadership-tech.typ"
+        section: "Leadership Experience"
+
+  - id: municipal-council-2022-
+    employer: "Municipality (local government)"
+    title: "Municipal Councilor; committee member"
+    location: "Örebro region, SE"
+    start: "2022-01"
+    end: null
+    domain: "governance"
+    setting: "local-government"
+    themes:
+      - governance
+      - policy-review
+      - stakeholder-coordination
+      - public-responsibility
+    summary: >
+      Elected representative in municipal council and committees, working with local governance, policy review and stakeholder coordination.
+    responsibilities:
+      - "Participate in municipal council decisions and committee work."
+      - "Review policies and proposals with a focus on responsibility, transparency and long-term impact."
+      - "Coordinate perspectives between citizens, administration and political groups."
+    evidence:
+      - source: "sv-health-lead.typ"
+        section: "Förtroendeuppdrag"
+      - source: "en-leadership-tech.typ"
+        section: "Governance & Community"
+
+  - id: blog-writing-2022-
+    employer: "Self-directed"
+    title: "Technical and research-focused writer"
+    location: "Remote"
+    start: "2022-01"
+    end: null
+    domain: "writing"
+    setting: "personal-site"
+    themes:
+      - technical-writing
+      - documentation
+      - research-communication
+      - data-and-ai
+      - systems-and-infra
+    summary: >
+      Writes technical and research-oriented posts on Rust, NixOS, systems, applied AI and psychological research, with a focus on clarity and reproducible workflows.
+    responsibilities:
+      - "Author in-depth posts on Rust, NixOS, infra and applied AI."
+      - "Document methods and workflows for data analysis and content processing (e.g., Pandoc pipelines)."
+      - "Communicate psychological research and measurement work in an accessible way."
+    evidence:
+      - source: "resources/blog-posts.md"
+        section: "all"
+

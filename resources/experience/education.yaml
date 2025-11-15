@@ -1,0 +1,62 @@
+# Structured representation of education history.
+
+education:
+  - id: ec-fullstack-2022-2024
+    institution: "EC Utbildningar"
+    location: "Remote, SE"
+    start: "2022-08"
+    end: "2024-06"
+    degree: "Full-Stack Developer (.NET)"
+    level: "postgraduate-vocational"
+    themes:
+      - software-development
+      - data-analysis
+      - ai-llm
+      - research-methods
+      - .NET development
+    thesis:
+      title: "LLM-based extraction of stress measures from student chat data"
+      summary: >
+        Designed and implemented a pipeline using large language models to extract stress-related measures from student chat data,
+        evaluated using longitudinal statistics and model validation.
+      themes:
+        - llm
+        - text-analysis
+        - longitudinal-analysis
+        - model-validation
+      evidence:
+        - source: "en-tech.typ"
+          section: "Education"
+        - source: "sv-health-psych.typ"
+          section: "Utbildning"
+
+  - id: orebro-psychology-2011-2016
+    institution: "Örebro University"
+    location: "Örebro, SE"
+    start: "2011-08"
+    end: "2016-06"
+    degree: "Psychologist, Master’s in Psychology"
+    level: "professional-degree+masters"
+    themes:
+      - clinical-psychology
+      - psychometrics
+      - research-methods
+      - organizational psychology
+      - leadership
+      - supervision-and-mentoring
+    thesis:
+      title: "Psychometric development of supervision-quality measures"
+      summary: >
+        Developed and validated measurement instruments for supervision quality using psychometric methods, with a focus on data-driven evaluation,
+        mentoring and workplace learning.
+      themes:
+        - psychometrics
+        - measurement-development
+        - supervision
+        - workplace-learning
+      evidence:
+        - source: "en-leadership-tech.typ"
+          section: "Education"
+        - source: "sv-health-lead.typ"
+          section: "Utbildning"
+

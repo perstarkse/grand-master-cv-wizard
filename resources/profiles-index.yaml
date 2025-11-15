@@ -1,0 +1,189 @@
+# Profiles Index
+#
+# This file describes the validated CV profiles in this repo.
+# Each profile is a view over the structured experience/resources, not the only truth.
+
+profiles:
+  - id: en-tech
+    path: "en-tech.typ"
+    language: "en"
+    focus: "tech"
+    primary_themes:
+      - fullstack-development
+      - infra
+      - data-and-ai
+    source_roles:
+      - tiqqe-fullstack-2023-2024
+      - region-orebro-psych-2024-
+      - region-orebro-psych-2018-2023
+      - municipal-council-2022-
+      - blog-writing-2022-
+    source_projects:
+      - project-minne
+      - project-infra
+    source_education:
+      - ec-fullstack-2022-2024
+      - orebro-psychology-2011-2016
+    validated_guide: true
+    notes: >
+      General English tech CV foregrounding full-stack development, infra and applied AI with psychology background.
+
+  - id: en-leadership-tech
+    path: "en-leadership-tech.typ"
+    language: "en"
+    focus: "leadership-tech"
+    primary_themes:
+      - leadership
+      - governance
+      - ai-productization
+    source_roles:
+      - tiqqe-fullstack-2023-2024
+      - region-orebro-psych-2024-
+      - region-orebro-psych-2018-2023
+      - municipal-council-2022-
+      - blog-writing-2022-
+    source_projects:
+      - project-minne
+      - project-infra
+    source_education:
+      - ec-fullstack-2022-2024
+      - orebro-psychology-2011-2016
+    validated_guide: true
+    notes: >
+      English leadership + tech profile highlighting roadmap ownership, AI delivery, safety/governance roles and communication.
+
+  - id: sv-tech
+    path: "sv-tech.typ"
+    language: "sv"
+    focus: "tech"
+    primary_themes:
+      - fullstack-development
+      - infra
+      - applied-ai
+    source_roles:
+      - tiqqe-fullstack-2023-2024
+      - region-orebro-psych-2024-
+      - region-orebro-psych-2018-2023
+    source_projects:
+      - project-minne
+      - project-infra
+    source_education:
+      - ec-fullstack-2022-2024
+      - orebro-psychology-2011-2016
+    validated_guide: true
+    notes: >
+      Swedish tech-focused CV; emphasises Rust/NixOS, infra and AI translation work, with clinical background as supporting context.
+
+  - id: sv-health-psych
+    path: "sv-health-psych.typ"
+    language: "sv"
+    focus: "health-psych"
+    primary_themes:
+      - clinical-psychology
+      - psychometrics
+      - data-and-quality
+    source_roles:
+      - region-orebro-psych-2024-
+      - region-orebro-psych-2018-2023
+      - tiqqe-fullstack-2023-2024
+      - municipal-council-2022-
+    source_projects:
+      - project-llm-psych-measures
+    source_education:
+      - orebro-psychology-2011-2016
+      - ec-fullstack-2022-2024
+    validated_guide: true
+    notes: >
+      Swedish health/psychology CV foregrounding clinical work, psychometrics, statistics and applied AI for research/quality improvement.
+
+  - id: sv-health-lead
+    path: "sv-health-lead.typ"
+    language: "sv"
+    focus: "health-lead"
+    primary_themes:
+      - leadership
+      - governance
+      - clinical-quality
+    source_roles:
+      - region-orebro-psych-2024-
+      - region-orebro-psych-2018-2023
+      - municipal-council-2022-
+    source_projects:
+      - project-llm-psych-measures
+    source_education:
+      - orebro-psychology-2011-2016
+      - ec-fullstack-2022-2024
+    validated_guide: true
+    notes: >
+      Swedish health-leadership CV highlighting work environment, patient safety, policy/governance and clinical leadership.
+
+  - id: sv-leadership-tech
+    path: "sv-leadership-tech.typ"
+    language: "sv"
+    focus: "leadership-tech"
+    primary_themes:
+      - leadership
+      - tech
+      - governance
+    source_roles:
+      - tiqqe-fullstack-2023-2024
+      - region-orebro-psych-2024-
+      - region-orebro-psych-2018-2023
+      - municipal-council-2022-
+    source_projects:
+      - project-minne
+      - project-infra
+    source_education:
+      - ec-fullstack-2022-2024
+      - orebro-psychology-2011-2016
+    validated_guide: true
+    notes: >
+      Swedish leadership + tech profile showing tech leadership, AI delivery, governance and communication.
+
+  - id: sv-trafikverket-tictec
+    path: "anpassade-cvn/sv-trafikverket-tictec.typ"
+    language: "sv"
+    focus: "tailored-tech"
+    primary_themes:
+      - platform-engineering
+      - infra
+      - enablement
+    source_roles:
+      - tiqqe-fullstack-2023-2024
+      - region-orebro-psych-2024-
+      - region-orebro-psych-2018-2023
+      - municipal-council-2022-
+    source_projects:
+      - project-minne
+      - project-infra
+    source_education:
+      - ec-fullstack-2022-2024
+      - orebro-psychology-2011-2016
+    validated_guide: true
+    notes: >
+      Tailored Swedish profile for Trafikverket/TicTec, emphasising platform, infra-as-code, automation and enablement.
+
+  - id: sv-sis-fou-mikrodata
+    path: "anpassade-cvn/sv-sis-fou-mikrodata.typ"
+    language: "sv"
+    focus: "tailored-data-microdata"
+    primary_themes:
+      - data-analysis
+      - microdata-like-material
+      - clinical-context
+      - governance
+    source_roles:
+      - region-orebro-psych-2024-
+      - region-orebro-psych-2018-2023
+      - tiqqe-fullstack-2023-2024
+      - municipal-council-2022-
+      - blog-writing-2022-
+    source_projects:
+      - project-llm-psych-measures
+    source_education:
+      - orebro-psychology-2011-2016
+      - ec-fullstack-2022-2024
+    validated_guide: true
+    notes: >
+      Tailored Swedish profile for a research/analysis role with focus on data handling, microdata-like material, quantitative methods
+      and secure work with sensitive information in a public-sector/clinical context.
