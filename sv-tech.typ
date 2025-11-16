@@ -63,7 +63,7 @@ Fullstackutvecklare med bakgrund i psykologi och tillämpad forskning. Erfaren i
   company: "TIQQE AB",
   dates: dates-helper(start-date: "apr 2023", end-date: "mar 2024"),
 )
-- Byggde AI-översättning med AWS Translate + LLMs; skalerade LMS 2 → 8+ språk och minskade manuellt arbete.
+- Byggde komplett AI-drivet översättningssystem med Vue.js/TypeScript och AWS Lambda, automatiserade undertextgenerering med OpenAI Whisper och flerspråkig innehållshantering med AWS Translate, minskade manuellt arbete med över 90%.
 - Tech- och kundnära lead: roadmap, krav och demovisningar.
 - Drev AI-införande via interna föredrag (LLMs/RAG) och externa strategisessioner.
 

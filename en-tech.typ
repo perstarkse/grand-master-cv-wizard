@@ -71,7 +71,7 @@ Full-stack developer with background in psychology and applied research. Experie
   company: "TIQQE AB",
   dates: dates-helper(start-date: "Apr 2023", end-date: "Mar 2024"),
 )
-- Built AI translation feature with AWS Translate + LLMs, scaling an LMS from 2 → 8+ languages and cutting manual localization.
+- Built end-to-end AI translation system with Vue.js/TypeScript and AWS Lambda, automated subtitle generation with OpenAI Whisper and multilingual content management with AWS Translate, reducing manual work by over 90%.
 - Acted as tech and client-facing lead: roadmap discussions, requirements, and demos.
 - Drove AI adoption through internal talks on LLMs/RAG and external AI strategy sessions.
 

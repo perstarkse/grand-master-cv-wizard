@@ -85,9 +85,11 @@ roles:
     summary: >
       Full-stack developer and client-facing lead responsible for AI-powered translation features, roadmap dialogue, and AI adoption work.
     responsibilities:
-      - "Architect and implement AI-powered translation for an LMS using AWS Translate and LLMs."
-      - "Scale the platform from 2 to 8+ languages, reducing manual localisation work."
-      - "Act as technical and client-facing lead in roadmap discussions, requirements gathering and demos."
+      - "Architect and implement end-to-end AI-powered translation system for multinational LMS using OpenAI Whisper, AWS Translate with custom dictionaries, and AWS Lambda."
+      - "Build Vue.js/TypeScript frontend for language administrators to maintain and improve translations, reducing manual workload by over 90%."
+      - "Design and implement S3-based subtitle management system with automatic language selection and content localization workflow."
+      - "Scale platform from 2 to 8+ languages, enabling rapid rollout of multilingual educational content to global workforce."
+      - "Act as technical and client-facing lead in requirements gathering, demonstrations, and strategic roadmap discussions with enterprise clients."
       - "Promote AI adoption via internal talks on LLMs/RAG and external strategy sessions with clients."
       - "Contribute to quality practices around code review, testing and release processes."
     evidence:

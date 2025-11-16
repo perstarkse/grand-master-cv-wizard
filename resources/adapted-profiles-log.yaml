@@ -38,3 +38,53 @@ adapted_profiles:
       Tailoring shifts focus toward data handling, analysis planning, statistical work, and secure handling of sensitive data in a public-sector/clinical context,
       while keeping clinical experience and governance/community roles as important context.
 
+  - id: sv-sogeti-konsult
+    path: "anpassade-cvn/sv-sogeti-konsult.typ"
+    based_on_profile: "sv-tech"
+    language: "sv"
+    target_role: "IT-konsult (Utvecklare) – Sogeti Sverige AB"
+    job_ad_source: "Sogeti job advertisement for IT consultants with modern web development focus"
+    themes_emphasised:
+      - consultancy-mindset
+      - modern-web-development
+      - fullstack-capabilities
+      - cloud-services
+      - system-integration
+      - continuous-learning
+      - team-collaboration
+      - customer-facing-skills
+    notes: >
+      Tailoring emphasizes consultancy profile, modern web technologies (React, Node.js, C#, Azure/AWS), fullstack development capabilities,
+      and strong customer orientation. Highlights experience from TIQQE consultancy role and continuous learning mindset, aligning with Sogeti's
+      culture of collaboration, skills development and positive attitude. Updated with actual AI translation LMS project details (Vue.js, TypeScript,
+      AWS Lambda, OpenAI Whisper) replacing generic enterprise AI project for authenticity.
+
+  - id: workflow-system-documentation
+    path: ".claude/workflows/cv-improvement-workflow.md"
+    type: "workflow_documentation"
+    date_created: "2024-11-16"
+    purpose: "Establish persistent workflow for CV improvement process"
+    components_added:
+      - ".claude/workflows/cv-improvement-workflow.md: Comprehensive 5-phase CV improvement workflow"
+      - "resources/evidence/ai-translation-system.md: Detailed evidence documentation for AI translation project"
+      - "resources/templates/project-template.md: Reusable template for future project documentation"
+    notes: >
+      Created persistent workflow system to document and repeat CV improvement process. Includes feedback integration loop,
+      quality assurance checkpoints, and comprehensive documentation templates. Supports systematic approach to CV enhancement
+      while maintaining authenticity and truthfulness. Workflow documentation localized under .claude/ directory to keep
+      agent-specific configuration separate from general resources.
+
+  - id: ai-translation-project-documentation
+    path: "resources/experience/projects.yaml"
+    type: "project_addition"
+    date_created: "2024-11-16"
+    project_id: "project-ai-translation-lms"
+    purpose: "Document actual AI translation LMS project with comprehensive details"
+    impact: >
+      Added authentic project details to structured data, replacing generic AI project with real-world implementation.
+      Updated base profiles (sv-tech.typ, en-tech.typ) and Sogeti CV with accurate technical details (Vue.js, TypeScript,
+      AWS Lambda, OpenAI Whisper, S3-based subtitle management). Enhanced credibility and interview readiness.
+    notes: >
+      Project demonstrates end-to-end ownership of AI integration, client relationship management, and technical
+      solution design. Provides concrete evidence for consultancy capabilities and modern technical expertise.
+

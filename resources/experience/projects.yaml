@@ -69,3 +69,28 @@ projects:
         section: "Projekt & publikationer"
       - source: "resources/blog-posts.md"
         section: "LLM research post"
+
+  - id: project-ai-translation-lms
+    name: "AI-driven multilingual LMS translation system"
+    role: "Lead developer and client contact"
+    start: "2023-08"
+    end: "2024-02"
+    domain: "software"
+    themes:
+      - ai-translation
+      - llm-integration
+      - localization
+      - aws-serverless
+      - vuejs
+      - typescript
+      - automation
+    summary: >
+      Designed and implemented an end-to-end automated translation system for a multinational industrial company's Learning Management System.
+      The system automated subtitle generation using OpenAI Whisper, managed translations in S3, and utilized AWS Translate with custom dictionaries
+      for accurate content localization. Built a Vue.js/TypeScript frontend for language administrators to maintain and improve translations,
+      reducing manual translation workload by over 90% and enabling rapid rollout of multilingual educational content.
+    evidence:
+      - source: "resources/evidence/ai-translation-system.md"
+        section: "Project details"
+      - source: "sv-sogeti-konsult.typ"
+        section: "Projekt"

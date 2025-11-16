@@ -187,3 +187,29 @@ profiles:
     notes: >
       Tailored Swedish profile for a research/analysis role with focus on data handling, microdata-like material, quantitative methods
       and secure work with sensitive information in a public-sector/clinical context.
+
+  - id: sv-sogeti-konsult
+    path: "anpassade-cvn/sv-sogeti-konsult.typ"
+    language: "sv"
+    focus: "tailored-consultancy"
+    primary_themes:
+      - fullstack-development
+      - consultancy
+      - modern-web
+      - cloud-services
+      - system-integration
+    source_roles:
+      - tiqqe-fullstack-2023-2024
+      - region-orebro-psych-2024-
+      - region-orebro-psych-2018-2023
+      - municipal-council-2022-
+    source_projects:
+      - project-minne
+      - project-infra
+    source_education:
+      - ec-fullstack-2022-2024
+      - orebro-psychology-2011-2016
+    validated_guide: true
+    notes: >
+      Tailored Swedish profile for Sogeti consultancy role, emphasising modern web development (React, Node.js, C#), cloud services (Azure/AWS),
+      fullstack capabilities, consultancy mindset and continuous learning with strong team collaboration focus.
